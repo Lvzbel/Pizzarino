@@ -1,0 +1,17 @@
+{
+  "name": "pizzarino",
+  "version": "1.0.0",
+  "description": "Bussiness Website for Pizzarino",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "author": "Rodrigo O. Coto",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.17.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0"
+  }
+}
