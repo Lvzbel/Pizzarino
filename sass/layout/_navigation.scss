@@ -4,14 +4,9 @@
   grid-column: full-start / full-end;
 
   padding: 0 10rem;
-
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: stretch;
-    height: 100%;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &__logo {
     display: flex;
@@ -31,6 +26,7 @@
 
   &__links {
     display: flex;
+    align-content: center;
     list-style: none;
     height: 100%;
   }
@@ -38,28 +34,28 @@
   &__item {
     display: flex;
     align-items: center;
-    // &:not(:last-child) {
-    //   padding-right: 3rem;
-    // }
+    transition: all 0.3s;
+    &:hover {
+      background-color: var(--color-primary-dark);
+    }
   }
 
   &__link:link,
   &__link:visited {
-    display: inline-block;
+    display: block;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
     font-weight: 500;
     font-size: 1.6rem;
     text-transform: uppercase;
-    // text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.3);
     text-shadow: var(--shadow-dark);
     transition: all 0.3s;
-    padding: 1.8rem 2rem;
+    padding: 2.5rem 1.5rem;
   }
   &__link:hover,
   &__link:active {
     text-shadow: var(--shadow-light);
-    transform: translateY(-0.5rem);
+    transform: translateY(-0.3rem);
   }
 }

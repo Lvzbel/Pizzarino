@@ -48,7 +48,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: [navbar-start] 10vh [navbar-end header-start] 90vh [header-end main-start] repeat(3, [row-start] min-content [row-end]) [footer-start] 60rem [footer-end];
+  grid-template-rows: [navbar-start] min-content [navbar-end header-start] 90vh [header-end main-start] repeat(3, [row-start] min-content [row-end]) [footer-start] 60rem [footer-end];
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 17rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
@@ -57,13 +57,9 @@ body {
   grid-row: navbar-start/navbar-end;
   grid-column: full-start/full-end;
   padding: 0 10rem;
-}
-.navigation__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-content: stretch;
-  height: 100%;
 }
 .navigation__logo {
   display: flex;
@@ -82,15 +78,20 @@ body {
 }
 .navigation__links {
   display: flex;
+  align-content: center;
   list-style: none;
   height: 100%;
 }
 .navigation__item {
   display: flex;
   align-items: center;
+  transition: all 0.3s;
+}
+.navigation__item:hover {
+  background-color: var(--color-primary-dark);
 }
 .navigation__link:link, .navigation__link:visited {
-  display: inline-block;
+  display: block;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
@@ -99,11 +100,11 @@ body {
   text-transform: uppercase;
   text-shadow: var(--shadow-dark);
   transition: all 0.3s;
-  padding: 1.8rem 2rem;
+  padding: 2.5rem 1.5rem;
 }
 .navigation__link:hover, .navigation__link:active {
   text-shadow: var(--shadow-light);
-  transform: translateY(-0.5rem);
+  transform: translateY(-0.3rem);
 }
 
 .header {
