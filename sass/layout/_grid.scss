@@ -2,7 +2,7 @@
   display: grid;
 
   grid-template-rows:
-    [navbar-start] min-content [navbar-end header-start] 90vh [header-end main-start] repeat(
+    [navbar-start] min-content [navbar-end header-start] 92vh [header-end main-start] repeat(
       3,
       [row-start] min-content [row-end]
     )
