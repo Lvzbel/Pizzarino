@@ -50,41 +50,33 @@ body {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 17rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
-.nav {
+.navigation {
   background-color: var(--color-primary);
   grid-row: navbar-start/navbar-end;
   grid-column: full-start/full-end;
 }
 
 .header {
-  background-color: yellowgreen;
   grid-row: header-start/header-end;
   grid-column: col-start 1/col-end 8;
 }
 
 .main {
-  background-color: aquamarine;
   grid-row: row-start 1/row-end 1;
   grid-column: col-start 1/col-end 8;
-  height: 800px;
 }
 
 .specials {
-  background-color: yellow;
   grid-row: row-start 2/row-end 2;
   grid-column: col-start 1/col-end 8;
-  height: 800px;
 }
 
 .featured {
-  background-color: green;
   grid-row: row-start 3/row-end 3;
   grid-column: col-start 1/col-end 8;
-  height: 800px;
 }
 
 .footer {
-  background-color: pink;
   grid-row: footer-start/footer-end;
   grid-column: col-start 1/col-end 8;
 }

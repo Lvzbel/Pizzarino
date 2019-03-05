@@ -1,0 +1,5 @@
+.navigation {
+  background-color: var(--color-primary);
+  grid-row: navbar-start / navbar-end;
+  grid-column: full-start / full-end;
+}

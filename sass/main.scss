@@ -7,9 +7,12 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "layout/grid";
 @import "layout/navigation";
 @import "layout/header";
-@import "layout/grid";
+@import "layout/main";
+@import "layout/specials";
+@import "layout/featured";
 @import "layout/footer";
 
 @import "pages/home";
