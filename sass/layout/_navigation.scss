@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: stretch;
     height: 100%;
   }
 
@@ -31,12 +32,15 @@
   &__links {
     display: flex;
     list-style: none;
+    height: 100%;
   }
 
   &__item {
-    &:not(:last-child) {
-      padding-right: 4rem;
-    }
+    display: flex;
+    align-items: center;
+    // &:not(:last-child) {
+    //   padding-right: 3rem;
+    // }
   }
 
   &__link:link,
@@ -46,11 +50,12 @@
     text-decoration: none;
     cursor: pointer;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     // text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.3);
     text-shadow: var(--shadow-dark);
     transition: all 0.3s;
+    padding: 1.8rem 2rem;
   }
   &__link:hover,
   &__link:active {
