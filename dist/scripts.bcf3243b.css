@@ -1,7 +1,16 @@
 :root {
-  --color-primary: #eb2f64;
-  --color-primary-light: #ff3366;
-  --color-primary-dark: #ba265d;
+  --color-primary: #ee1c23;
+  --color-primary-light: #ff363d;
+  --color-primary-dark: #d5030a;
+  --color-secondary: #fcc606;
+  --color-secondary-light: #ffe020;
+  --color-secondary-dark: #e3ad00;
+  --color-tertiary: #009867;
+  --color-tertiary-light: #1ab281;
+  --color-tertiary-dark: #007f4e;
+  --color-black: #221e1f;
+  --color-black-light: #3c3839;
+  --color-black-lighter: #555152;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -33,4 +42,49 @@ body {
 
 body {
   font-size: 1.6rem;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: [navbar-start] 10vh [navbar-end header-start] 90vh [header-end main-start] repeat(3, [row-start] min-content [row-end]) [footer-start] 60rem [footer-end];
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 17rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.nav {
+  background-color: var(--color-primary);
+  grid-row: navbar-start/navbar-end;
+  grid-column: full-start/full-end;
+}
+
+.header {
+  background-color: yellowgreen;
+  grid-row: header-start/header-end;
+  grid-column: col-start 1/col-end 8;
+}
+
+.main {
+  background-color: aquamarine;
+  grid-row: row-start 1/row-end 1;
+  grid-column: col-start 1/col-end 8;
+  height: 800px;
+}
+
+.specials {
+  background-color: yellow;
+  grid-row: row-start 2/row-end 2;
+  grid-column: col-start 1/col-end 8;
+  height: 800px;
+}
+
+.featured {
+  background-color: green;
+  grid-row: row-start 3/row-end 3;
+  grid-column: col-start 1/col-end 8;
+  height: 800px;
+}
+
+.footer {
+  background-color: pink;
+  grid-row: footer-start/footer-end;
+  grid-column: col-start 1/col-end 8;
 }
