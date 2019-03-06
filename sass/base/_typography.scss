@@ -2,6 +2,7 @@ body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.15rem;
   font-size: $font-size-default;
+  color: var(--color-black-lighter);
 }
 
 .heading-primary {
@@ -25,4 +26,20 @@ body {
     font-size: 2.2rem;
     text-align: center;
   }
+}
+
+.third-header {
+  font-size: 3.2rem;
+  text-shadow: var(--shadow-light);
+  margin-bottom: 4rem;
+}
+
+.fith-header {
+  font-size: 2.5rem;
+  text-shadow: var(--shadow-light);
+  margin-bottom: 3rem;
+}
+
+.messages {
+  line-height: 2.5rem;
 }
