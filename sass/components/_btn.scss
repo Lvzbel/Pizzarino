@@ -12,4 +12,10 @@
   padding: 1.3rem 2.8rem;
   border-radius: 50px;
   box-shadow: var(--shadow-dark);
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: var(--color-secondary-light);
+    transform: scale(1.05);
+  }
 }
