@@ -1,4 +1,18 @@
 .header {
   grid-row: header-start / header-end;
-  grid-column: col-start 1 / col-end 8;
+  grid-column: full-start / full-end;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#000, 0.7),
+      rgba(#000, 0.7)
+    ),
+    url(/img/flame-oven.jpg);
+  // background-image: url(/img/flame-oven.jpg);
+  background-size: cover;
 }

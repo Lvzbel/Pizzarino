@@ -176,7 +176,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"scripts/index.js":[function(require,module,exports) {
+},{"/home/lvzbel/GitHub/pizzarino/img/flame-oven.jpg":[["flame-oven.543f78d9.jpg","img/flame-oven.jpg"],"img/flame-oven.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"scripts/index.js":[function(require,module,exports) {
 "use strict";
 
 require("../sass/main.scss");
@@ -207,7 +207,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38205" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41449" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
