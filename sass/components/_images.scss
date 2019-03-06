@@ -1,0 +1,10 @@
+.showcase__image {
+  box-shadow: var(--shadow-dark);
+  border-radius: 3px;
+  transition: all 0.3s;
+  width: 100%;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

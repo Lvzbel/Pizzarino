@@ -1,7 +1,6 @@
 .family {
   grid-row: row-start 1 / row-end 1;
   grid-column: full-start / col-end 4;
-  // height: 60rem;
   padding: 5rem 3.5rem;
 
   display: flex;
@@ -10,15 +9,7 @@
   align-items: center;
 
   &__image {
-    width: 100%;
-    box-shadow: var(--shadow-dark);
-    border-radius: 3px;
     flex-basis: 50%;
-    transition: all 0.3s;
-
-    &:hover {
-      transform: scale(1.05);
-    }
   }
 
   &__text {
