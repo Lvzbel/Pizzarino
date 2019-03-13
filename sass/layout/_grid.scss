@@ -6,7 +6,7 @@
       3,
       [row-start] min-content [row-end]
     )
-    [footer-start] 60rem [footer-end];
+    [footer-start] min-content [footer-end];
 
   grid-template-columns:
     [full-start] minmax(6rem, 1fr) [center-start] repeat(

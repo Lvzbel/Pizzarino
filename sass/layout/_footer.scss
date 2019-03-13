@@ -1,4 +1,11 @@
 .footer {
   grid-row: footer-start / footer-end;
-  grid-column: col-start 1 / col-end 8;
+  grid-column: full-start / full-end;
+  background-color: var(--color-background-primary);
+
+  &__social {
+    &-link {
+      text-align: center;
+    }
+  }
 }

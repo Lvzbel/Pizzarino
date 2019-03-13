@@ -9,6 +9,7 @@
   "author": "Rodrigo O. Coto",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.2",
     "sass": "^1.17.2"
   },
   "devDependencies": {
