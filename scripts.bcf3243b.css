@@ -141,26 +141,41 @@ body {
   background: #3b5998;
   color: white;
 }
+.fa-facebook-f:hover {
+  background: #4c70ba;
+}
 
 .fa-twitter {
   background: #55acee;
   color: white;
+}
+.fa-twitter:hover {
+  background: #83c3f3;
 }
 
 .fa-google {
   background: #dd4b39;
   color: white;
 }
+.fa-google:hover {
+  background: #e47365;
+}
 
 .fa-instagram {
   background: #125688;
   color: white;
+}
+.fa-instagram:hover {
+  background: #1872b5;
 }
 
 .fa-snapchat-ghost {
   background: #fffc00;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-snapchat-ghost:hover {
+  background: #fffd33;
 }
 
 .container {
@@ -386,11 +401,26 @@ body {
   grid-row: footer-start/footer-end;
   grid-column: full-start/full-end;
   background-color: var(--color-background-primary);
+  padding: 3rem 3rem;
+}
+.footer__header {
+  font-size: 1.5rem;
+  color: var(--color-grey-light-1);
+  margin-bottom: 1.5rem;
 }
 .footer__social-link {
   font-size: 3rem;
   text-align: center;
   text-decoration: none;
+}
+.footer__social-link:not(:last-child) {
+  margin-right: 1rem;
+}
+.footer__license {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--color-grey-light-3);
+  margin-top: 1rem;
 }.fa,
 .fas,
 .far,
