@@ -3,9 +3,9 @@
   grid-column: full-start / full-end;
   background-color: var(--color-background-primary);
 
-  &__social {
-    &-link {
-      text-align: center;
-    }
+  &__social-link {
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
   }
 }
