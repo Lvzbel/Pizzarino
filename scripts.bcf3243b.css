@@ -248,7 +248,7 @@ body {
   align-items: center;
 }
 .family__image {
-  flex-basis: 50%;
+  width: 50%;
 }
 .family__text {
   flex-basis: 45%;
