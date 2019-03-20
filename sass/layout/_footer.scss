@@ -2,10 +2,28 @@
   grid-row: footer-start / footer-end;
   grid-column: full-start / full-end;
   background-color: var(--color-background-primary);
+  padding: 3rem 3rem;
+
+  &__header {
+    font-size: 1.5rem;
+    color: var(--color-grey-light-1);
+    margin-bottom: 1.5rem;
+  }
 
   &__social-link {
     font-size: 3rem;
     text-align: center;
     text-decoration: none;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__license {
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-grey-light-3);
+    margin-top: 1rem;
   }
 }

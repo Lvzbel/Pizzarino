@@ -7,25 +7,45 @@
 .fa-facebook-f {
   background: #3b5998;
   color: white;
+
+  &:hover {
+    background: lighten(#3b5998, 10%);
+  }
 }
 
 .fa-twitter {
   background: #55acee;
   color: white;
+
+  &:hover {
+    background: lighten(#55acee, 10%);
+  }
 }
 
 .fa-google {
   background: #dd4b39;
   color: white;
+
+  &:hover {
+    background: lighten(#dd4b39, 10%);
+  }
 }
 
 .fa-instagram {
   background: #125688;
   color: white;
+
+  &:hover {
+    background: lighten(#125688, 10%);
+  }
 }
 
 .fa-snapchat-ghost {
   background: #fffc00;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  &:hover {
+    background: lighten(#fffc00, 10%);
+  }
 }
