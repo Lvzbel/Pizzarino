@@ -132,11 +132,9 @@ body {
 }
 
 .fab {
-  padding: 2rem;
-  font-size: 3rem;
-  width: 5rem;
-  text-align: center;
-  text-decoration: none;
+  width: 5.5rem;
+  height: 5rem;
+  padding: 1rem 0;
 }
 
 .fa-facebook-f {
@@ -390,7 +388,9 @@ body {
   background-color: var(--color-background-primary);
 }
 .footer__social-link {
+  font-size: 3rem;
   text-align: center;
+  text-decoration: none;
 }.fa,
 .fas,
 .far,
