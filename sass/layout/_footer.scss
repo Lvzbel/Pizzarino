@@ -2,7 +2,11 @@
   grid-row: footer-start / footer-end;
   grid-column: full-start / full-end;
   background-color: var(--color-background-primary);
-  padding: 3rem 3rem;
+  padding: 3rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 2rem;
+  }
 
   &__header {
     font-size: 1.5rem;

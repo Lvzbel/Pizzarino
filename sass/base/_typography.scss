@@ -32,18 +32,31 @@ body {
   font-size: 3.2rem;
   text-shadow: var(--shadow-light);
   margin-bottom: 4rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin-bottom: 2rem;
+  }
 }
 
 .second-header {
   font-size: 3.9rem;
   text-shadow: var(--shadow-light);
   margin-bottom: 6rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin-bottom: 3rem;
+  }
 }
 
 .fith-header {
   font-size: 2.5rem;
   text-shadow: var(--shadow-light);
   margin-bottom: 3rem;
+  line-height: 1.5;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .fith-header-primary {

@@ -7,7 +7,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 5rem 3.5rem;
-  // padding-top: 8.2rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 3.5rem 2.5rem;
+  }
 
   &__img-container {
     flex-basis: 50%;
