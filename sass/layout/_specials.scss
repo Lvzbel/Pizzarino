@@ -21,6 +21,10 @@
     grid-template-rows: repeat(4, min-content);
     // grid-template-columns: repeat(2, 1fr);
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -56,17 +60,19 @@
     align-self: end;
     align-content: center;
 
-    @media only screen and (max-width: $bp-medium) {
-      padding: 0 2rem;
-      line-height: 2.4rem;
-    }
-
     @media only screen and (max-width: $bp-largest) {
       margin-top: 3rem;
     }
 
     @media only screen and (max-width: $bp-medium) {
       margin-top: 0;
+      padding: 0 2rem;
+      line-height: 2.4rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      line-height: 3rem;
+      margin-top: 4rem;
     }
   }
   &__hours {

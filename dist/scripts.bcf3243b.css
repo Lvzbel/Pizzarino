@@ -380,6 +380,11 @@ body {
   grid-template-rows: repeat(4, min-content);
   grid-template-columns: repeat(2, minmax(min-content, 1fr));
 }
+@media only screen and (max-width: 37.5em) {
+  .specials__content {
+    width: 100%;
+  }
+}
 .specials__title {
   grid-row: 1/1;
   grid-column: 1/span 2;
@@ -412,12 +417,6 @@ body {
   align-self: end;
   align-content: center;
 }
-@media only screen and (max-width: 50em) {
-  .specials__description {
-    padding: 0 2rem;
-    line-height: 2.4rem;
-  }
-}
 @media only screen and (max-width: 75em) {
   .specials__description {
     margin-top: 3rem;
@@ -426,6 +425,14 @@ body {
 @media only screen and (max-width: 50em) {
   .specials__description {
     margin-top: 0;
+    padding: 0 2rem;
+    line-height: 2.4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .specials__description {
+    line-height: 3rem;
+    margin-top: 4rem;
   }
 }
 .specials__hours {
@@ -475,6 +482,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .featured__figure {
+    flex-basis: 45%;
+  }
 }
 .featured__image {
   display: block;
