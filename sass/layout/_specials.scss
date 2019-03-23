@@ -5,8 +5,12 @@
   color: var(--color-grey-light-3);
   padding: 6rem 5rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-row: row-start 3 / row-end 3;
+  }
+
   @media only screen and (max-width: $bp-largest) {
-    padding: 2rem 3.5rem;
+    padding: 3rem 2.5rem;
   }
 
   display: flex;
@@ -52,8 +56,17 @@
     align-self: end;
     align-content: center;
 
+    @media only screen and (max-width: $bp-medium) {
+      padding: 0 2rem;
+      line-height: 2.4rem;
+    }
+
     @media only screen and (max-width: $bp-largest) {
       margin-top: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 0;
     }
   }
   &__hours {

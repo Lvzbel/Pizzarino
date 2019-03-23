@@ -7,6 +7,11 @@
     padding: 4rem 5.5rem;
   }
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-row: row-start 4 / row-end 4;
+    padding: 4rem 2rem;
+  }
+
   &__title {
   }
 
