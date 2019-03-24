@@ -25,6 +25,10 @@
     @media only screen and (max-width: $bp-small) {
       width: 100%;
     }
+
+    @media only screen and (max-width: $bp-micro) {
+      grid-template-columns: minmax(min-content, 1fr);
+    }
   }
 
   &__title {
@@ -40,6 +44,10 @@
     @media only screen and (max-width: $bp-largest) {
       margin: 2rem;
     }
+
+    @media only screen and (max-width: $bp-micro) {
+      grid-column: 1 / span 2;
+    }
   }
   &__img {
     // max-width: 60rem;
@@ -48,6 +56,10 @@
     grid-column: 1 / 2;
     display: block;
     box-shadow: var(--shadow-dark);
+
+    @media only screen and (max-width: $bp-micro) {
+      grid-column: 1 / span 2;
+    }
   }
   &__description {
     display: inline-block;
@@ -73,6 +85,13 @@
     @media only screen and (max-width: $bp-small) {
       line-height: 3rem;
       margin-top: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-micro) {
+      grid-column: 1 / span 2;
+      grid-row: 5 / 6;
+      margin: 3rem 0;
+      padding: 0;
     }
   }
   &__hours {

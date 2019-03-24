@@ -24,6 +24,11 @@
     @media only screen and (max-width: $bp-medium) {
       margin-top: 1.5rem;
     }
+
+    @media only screen and (max-width: $bp-micro) {
+      flex-basis: 100%;
+      order: 2;
+    }
   }
   &__img-1 {
     width: 100%;
@@ -32,6 +37,12 @@
   &__text {
     flex-basis: 45%;
     order: 2;
+
+    @media only screen and (max-width: $bp-micro) {
+      flex-basis: 100%;
+      order: 3;
+      margin-top: 1.5rem;
+    }
   }
 }
 

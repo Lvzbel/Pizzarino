@@ -37,6 +37,10 @@
     @media only screen and (max-width: $bp-small) {
       flex-basis: 45%;
     }
+
+    @media only screen and (max-width: $bp-micro) {
+      flex-basis: 95%;
+    }
   }
 
   &__image {
