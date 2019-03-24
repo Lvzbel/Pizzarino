@@ -42,6 +42,11 @@ html {
     font-size: 50%;
   }
 }
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 45%;
+  }
+}
 
 body {
   font-family: sans-serif;
@@ -70,10 +75,20 @@ body {
   display: block;
   font-size: 7rem;
 }
+@media only screen and (max-width: 25em) {
+  .heading-primary--main {
+    font-size: 5rem;
+  }
+}
 .heading-primary--sub {
   display: block;
   font-size: 2.2rem;
   text-align: center;
+}
+@media only screen and (max-width: 25em) {
+  .heading-primary--sub {
+    font-size: 1.8rem;
+  }
 }
 
 .third-header {
@@ -84,6 +99,11 @@ body {
 @media only screen and (max-width: 75em) {
   .third-header {
     margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .third-header {
+    font-size: 2.8rem;
   }
 }
 
@@ -352,8 +372,19 @@ body {
     margin-top: 1.5rem;
   }
 }
+@media only screen and (max-width: 25em) {
+  .family__image {
+    flex-basis: 100%;
+  }
+}
 .family__text {
   flex-basis: 45%;
+}
+@media only screen and (max-width: 25em) {
+  .family__text {
+    flex-basis: 100%;
+    margin-top: 1.5rem;
+  }
 }
 
 .third-header {
@@ -390,12 +421,25 @@ body {
     margin-top: 1.5rem;
   }
 }
+@media only screen and (max-width: 25em) {
+  .ingredients__img-container {
+    flex-basis: 100%;
+    order: 2;
+  }
+}
 .ingredients__img-1 {
   width: 100%;
 }
 .ingredients__text {
   flex-basis: 45%;
   order: 2;
+}
+@media only screen and (max-width: 25em) {
+  .ingredients__text {
+    flex-basis: 100%;
+    order: 3;
+    margin-top: 1.5rem;
+  }
 }
 
 .third-header {
@@ -433,6 +477,11 @@ body {
     width: 100%;
   }
 }
+@media only screen and (max-width: 25em) {
+  .specials__content {
+    grid-template-columns: minmax(min-content, 1fr);
+  }
+}
 .specials__title {
   grid-row: 1/1;
   grid-column: 1/span 2;
@@ -447,12 +496,22 @@ body {
     margin: 2rem;
   }
 }
+@media only screen and (max-width: 25em) {
+  .specials__title {
+    grid-column: 1/span 2;
+  }
+}
 .specials__img {
   width: 100%;
   grid-row: 2/span 2;
   grid-column: 1/2;
   display: block;
   box-shadow: var(--shadow-dark);
+}
+@media only screen and (max-width: 25em) {
+  .specials__img {
+    grid-column: 1/span 2;
+  }
 }
 .specials__description {
   display: inline-block;
@@ -481,6 +540,14 @@ body {
   .specials__description {
     line-height: 3rem;
     margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .specials__description {
+    grid-column: 1/span 2;
+    grid-row: 5/6;
+    margin: 3rem 0;
+    padding: 0;
   }
 }
 .specials__hours {
@@ -534,6 +601,11 @@ body {
 @media only screen and (max-width: 37.5em) {
   .featured__figure {
     flex-basis: 45%;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .featured__figure {
+    flex-basis: 95%;
   }
 }
 .featured__image {
