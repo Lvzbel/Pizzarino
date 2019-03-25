@@ -51,7 +51,13 @@
 
       <div class="family">
         <h3 class="third-header">Family Owned and Operated</h3>
-        <img class="family__image showcase__image" src="/family.1945b17b.jpg" alt="">
+
+        <picture class="family__image">
+          <source media="(min-width: 901px)" srcset="/family_large_1x.40fc3ba1.jpeg 1x,/family_large_2x.cef005d3.jpeg 2x">
+          <source media="(max-width: 900px)" srcset="/family_small_1x.b7a2dd4c.jpeg 1x,/family_small_2x.226a3b7d.jpeg 2x">
+          <img class="showcase__image" src="/family.1945b17b.jpg" alt="picture of our lovely family at Pizzarrino">
+        </picture>
+
         <div class="family__text">
           <h5 class="fith-header fith-header-primary">It's more than pizza.</h5>
           <p class="messages">
@@ -65,7 +71,11 @@
       <div class="ingredients">
         <h3 class="third-header">Locally Sourced Ingredients</h3>
         <div class="ingredients__img-container">
-          <img src="/ingredients.f509e53a.jpg" alt="Pizza Show Casing Ingredients" class="ingredients__img-1 showcase__image">
+          <picture class="ingredients__img-1">
+            <source media="(min-width: 901px)" srcset="/ingredients_large_1x.a515f75f.jpeg 1x,/ingredients_large_2x.f84ae3df.jpeg 2x">
+            <source media="(max-width: 900px)" srcset="/ingredients_small_1x.b35f45ca.jpeg 1x,/ingredients_small_2x.9fcea89b.jpeg 2x">
+            <img class="showcase__image" src="/ingredients.f509e53a.jpg" alt="slice of pizza showcasing our locally sourced ingredients">
+          </picture>
         </div>
         <div class="ingredients__text">
           <h5 class="fith-header fith-header-secondary">

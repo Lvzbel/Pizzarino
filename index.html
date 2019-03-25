@@ -58,11 +58,29 @@
 
       <div class="family">
         <h3 class="third-header">Family Owned and Operated</h3>
-        <img
-          class="family__image showcase__image"
-          src="img/family.jpg"
-          alt=""
-        />
+
+        <picture class="family__image">
+          <source
+            media="(min-width: 901px)"
+            srcset="
+              img/responsive_img/family_large_1x.jpeg 1x,
+              img/responsive_img/family_large_2x.jpeg 2x
+            "
+          />
+          <source
+            media="(max-width: 900px)"
+            srcset="
+              img/responsive_img/family_small_1x.jpeg 1x,
+              img/responsive_img/family_small_2x.jpeg 2x
+            "
+          />
+          <img
+            class="showcase__image"
+            src="img/family.jpg"
+            alt="picture of our lovely family at Pizzarrino"
+          />
+        </picture>
+
         <div class="family__text">
           <h5 class="fith-header fith-header-primary">It's more than pizza.</h5>
           <p class="messages">
@@ -76,11 +94,27 @@
       <div class="ingredients">
         <h3 class="third-header">Locally Sourced Ingredients</h3>
         <div class="ingredients__img-container">
-          <img
-            src="img/ingredients.jpg"
-            alt="Pizza Show Casing Ingredients"
-            class="ingredients__img-1 showcase__image"
-          />
+          <picture class="ingredients__img-1">
+            <source
+              media="(min-width: 901px)"
+              srcset="
+                img/responsive_img/ingredients_large_1x.jpeg 1x,
+                img/responsive_img/ingredients_large_2x.jpeg 2x
+              "
+            />
+            <source
+              media="(max-width: 900px)"
+              srcset="
+                img/responsive_img/ingredients_small_1x.jpeg 1x,
+                img/responsive_img/ingredients_small_2x.jpeg 2x
+              "
+            />
+            <img
+              class="showcase__image"
+              src="img/ingredients.jpg"
+              alt="slice of pizza showcasing our locally sourced ingredients"
+            />
+          </picture>
         </div>
         <div class="ingredients__text">
           <h5 class="fith-header fith-header-secondary">
