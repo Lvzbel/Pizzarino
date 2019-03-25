@@ -229,6 +229,10 @@ body {
   background: #fffd33;
 }
 
+.responsive-img {
+  width: 100%;
+}
+
 .container {
   display: grid;
   grid-template-rows: [navbar-start] min-content [navbar-end header-start] 91vh [header-end main-start] repeat(3, [row-start] min-content [row-end]) [footer-start] min-content [footer-end];
