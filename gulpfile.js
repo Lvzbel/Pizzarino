@@ -5,19 +5,18 @@ const rename = require("gulp-rename");
 // =================================================
 // Images will resize and compress all responsive images
 // =================================================
-gulp.task("images", ["image_1", "image_2", "image_3", "image_4"], () => {
-  // Original:  70 quality              _large_2x.jpg
-  // quality: 50 quality                _large_1x.jpg
-  // quality: 70 quality, width: 500    _small_2x.jpg
-  // quality: 50 quality, width: 500    _small_1x.jpg
-});
+// Original:  70 quality, width: 1200 _large_2x.jpg
+// quality: 50 quality, width: 1200   _large_1x.jpg
+// quality: 70 quality, width: 500    _small_2x.jpg
+// quality: 50 quality, width: 500    _small_1x.jpg
 
-gulp.task("image_1", function() {
-  return gulp
+function image_1(done) {
+  gulp
     .src("img/*.jpg")
     .pipe(
       responsive({
         "*.jpg": {
+          width: 1200,
           quality: 70
         }
       })
@@ -28,14 +27,16 @@ gulp.task("image_1", function() {
       })
     )
     .pipe(gulp.dest("img/responsive_img"));
-});
+  done();
+}
 
-gulp.task("image_2", function() {
-  return gulp
+function image_2(done) {
+  gulp
     .src("img/*.jpg")
     .pipe(
       responsive({
         "*.jpg": {
+          width: 1200,
           quality: 50
         }
       })
@@ -46,15 +47,16 @@ gulp.task("image_2", function() {
       })
     )
     .pipe(gulp.dest("img/responsive_img"));
-});
+  done();
+}
 
-gulp.task("image_3", function() {
-  return gulp
+function image_3(done) {
+  gulp
     .src("img/*.jpg")
     .pipe(
       responsive({
         "*.jpg": {
-          width: 500,
+          width: 600,
           quality: 70
         }
       })
@@ -65,15 +67,16 @@ gulp.task("image_3", function() {
       })
     )
     .pipe(gulp.dest("img/responsive_img"));
-});
+  done();
+}
 
-gulp.task("image_4", function() {
-  return gulp
+function image_4(done) {
+  gulp
     .src("img/*.jpg")
     .pipe(
       responsive({
         "*.jpg": {
-          width: 500,
+          width: 600,
           quality: 50
         }
       })
@@ -84,4 +87,7 @@ gulp.task("image_4", function() {
       })
     )
     .pipe(gulp.dest("img/responsive_img"));
-});
+  done();
+}
+
+gulp.task("default", gulp.series(image_1, image_2, image_3, image_4));
