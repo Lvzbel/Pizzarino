@@ -131,11 +131,27 @@
         <h2 class="second-header">Everyday Specials</h2>
         <div class="specials__content">
           <h6 class="specials__title">$5 Lunch Special</h6>
-          <img
-            src="/img/lunch-special.jpg"
-            alt="Lunch including a drink, salad and pizza slice."
-            class="specials__img"
-          />
+          <picture class="specials__img">
+            <source
+              media="(min-width: 901px)"
+              srcset="
+                img/responsive_img/lunch-special_large_1x.jpeg 1x,
+                img/responsive_img/lunch-special_large_2x.jpeg 2x
+              "
+            />
+            <source
+              media="(max-width: 900px)"
+              srcset="
+                img/responsive_img/lunch-special_small_1x.jpeg 1x,
+                img/responsive_img/lunch-special_small_2x.jpeg 2x
+              "
+            />
+            <img
+              class="responsive-img"
+              src="img/lunch-special.jpg"
+              alt="Lunch including a drink, salad and pizza slice."
+            />
+          </picture>
           <p class="specials__description">
             Our delicious lunch special includes a ice cold drink, itallian
             salad and a pizza slice of your choice.
@@ -146,11 +162,27 @@
         </div>
         <div class="specials__content">
           <h6 class="specials__title">$8 Dinner Special</h6>
-          <img
-            src="/img/dinner-special.jpg"
-            alt="Lunch including a beer and pizza slice."
-            class="specials__img"
-          />
+          <picture class="specials__img">
+            <source
+              media="(min-width: 901px)"
+              srcset="
+                img/responsive_img/dinner-special_large_1x.jpeg 1x,
+                img/responsive_img/dinner-special_large_2x.jpeg 2x
+              "
+            />
+            <source
+              media="(max-width: 900px)"
+              srcset="
+                img/responsive_img/dinner-special_small_1x.jpeg 1x,
+                img/responsive_img/dinner-special_small_2x.jpeg 2x
+              "
+            />
+            <img
+              class="responsive-img"
+              src="img/dinner-special.jpg"
+              alt="Lunch including a beer and pizza slice."
+            />
+          </picture>
           <p class="specials__description">
             If your looking for a quick but relaxing bite, our dinner special is
             just for you, includes a beer and a pizza slice.
