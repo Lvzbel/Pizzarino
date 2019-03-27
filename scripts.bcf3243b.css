@@ -44,7 +44,7 @@ html {
 }
 @media only screen and (max-width: 31.25em) {
   html {
-    font-size: 45%;
+    font-size: 4%;
   }
 }
 @media only screen and (min-width: 156.25em) {
@@ -113,7 +113,7 @@ body {
 }
 @media only screen and (max-width: 31.25em) {
   .third-header {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
   }
 }
 
@@ -302,7 +302,6 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .navigation__links {
-    display: none;
     flex-basis: 100%;
     flex-direction: column;
     text-align: center;
@@ -353,6 +352,14 @@ body {
   display: flex;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .hide {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+}
+
 .header {
   grid-row: header-start/header-end;
   grid-column: full-start/full-end;
@@ -360,7 +367,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(flame-oven.543f78d9.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/flame-oven.543f78d9.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -630,6 +637,11 @@ body {
   transition: all 0.3s;
   z-index: 10;
 }
+@media only screen and (max-width: 56.25em) {
+  .featured__image {
+    transform: scale(1.05);
+  }
+}
 .featured__image:hover {
   transform: scale(1.05);
 }
@@ -673,7 +685,8 @@ body {
   text-align: center;
   color: var(--color-grey-light-3);
   margin-top: 1rem;
-}.fa,
+}
+.fa,
 .fas,
 .far,
 .fal,
@@ -4931,8 +4944,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url("fa-brands-400.1bb139e6.eot");
-  src: url("fa-brands-400.1bb139e6.eot?#iefix") format("embedded-opentype"), url("fa-brands-400.1d34615d.woff2") format("woff2"), url("fa-brands-400.eca31406.woff") format("woff"), url("fa-brands-400.df86de32.ttf") format("truetype"), url("fa-brands-400.f1eb0e8c.svg#fontawesome") format("svg"); }
+  src: url("/fa-brands-400.1bb139e6.eot");
+  src: url("/fa-brands-400.1bb139e6.eot?#iefix") format("embedded-opentype"), url("/fa-brands-400.1d34615d.woff2") format("woff2"), url("/fa-brands-400.eca31406.woff") format("woff"), url("/fa-brands-400.df86de32.ttf") format("truetype"), url("/fa-brands-400.f1eb0e8c.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -4941,8 +4954,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url("fa-regular-400.a2c1909d.eot");
-  src: url("fa-regular-400.a2c1909d.eot?#iefix") format("embedded-opentype"), url("fa-regular-400.5ca8c932.woff2") format("woff2"), url("fa-regular-400.3c3cc54e.woff") format("woff"), url("fa-regular-400.cde05ce7.ttf") format("truetype"), url("fa-regular-400.6ef294e6.svg#fontawesome") format("svg"); }
+  src: url("/fa-regular-400.a2c1909d.eot");
+  src: url("/fa-regular-400.a2c1909d.eot?#iefix") format("embedded-opentype"), url("/fa-regular-400.5ca8c932.woff2") format("woff2"), url("/fa-regular-400.3c3cc54e.woff") format("woff"), url("/fa-regular-400.cde05ce7.ttf") format("truetype"), url("/fa-regular-400.6ef294e6.svg#fontawesome") format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -4952,10 +4965,13 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url("fa-solid-900.90890cef.eot");
-  src: url("fa-solid-900.90890cef.eot?#iefix") format("embedded-opentype"), url("fa-solid-900.da0e0451.woff2") format("woff2"), url("fa-solid-900.935b31ea.woff") format("woff"), url("fa-solid-900.f2409036.ttf") format("truetype"), url("fa-solid-900.c87ba59a.svg#fontawesome") format("svg"); }
+  src: url("/fa-solid-900.90890cef.eot");
+  src: url("/fa-solid-900.90890cef.eot?#iefix") format("embedded-opentype"), url("/fa-solid-900.da0e0451.woff2") format("woff2"), url("/fa-solid-900.935b31ea.woff") format("woff"), url("/fa-solid-900.f2409036.ttf") format("truetype"), url("/fa-solid-900.c87ba59a.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+
+/*# sourceMappingURL=/scripts.bcf3243b.css.map */
