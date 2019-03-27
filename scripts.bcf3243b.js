@@ -204,7 +204,15 @@ require("../node_modules/@fortawesome/fontawesome-free/css/all.css");
 var menuButton = document.querySelector(".navigation__menu");
 var menuLinks = document.querySelector(".navigation__links");
 menuButton.addEventListener("click", function (e) {
-  menuLinks.classList.toggle("hide");
+  var expanded = menuButton.getAttribute("aria-expanded");
+  menuLinks.classList.toggle("hide"); // Will set accessible value expandable
+  // http://www.davidmacd.com/blog/toggle-aria-expanded-javascript.html
+
+  if (expanded === "false") {
+    menuButton.setAttribute("aria-expanded", "true");
+  } else if (expanded === "true") {
+    menuButton.setAttribute("aria-expanded", "false");
+  }
 });
 },{"../sass/main.scss":"sass/main.scss","../node_modules/@fortawesome/fontawesome-free/css/all.css":"node_modules/@fortawesome/fontawesome-free/css/all.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
