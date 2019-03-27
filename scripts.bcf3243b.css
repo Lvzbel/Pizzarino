@@ -246,7 +246,7 @@ body {
 }
 
 .navigation {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
   grid-row: navbar-start/navbar-end;
   grid-column: full-start/full-end;
   padding: 0 10rem;
