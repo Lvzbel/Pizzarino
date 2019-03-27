@@ -57,7 +57,6 @@
     height: 100%;
 
     @media only screen and (max-width: $bp-medium) {
-      display: none;
       flex-basis: 100%;
       flex-direction: column;
       text-align: center;
@@ -109,4 +108,14 @@
 
 .active {
   display: flex;
+}
+
+// To avoid using display none which is unaccessible
+// https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/
+.hide {
+  @media only screen and (max-width: $bp-medium) {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
 }

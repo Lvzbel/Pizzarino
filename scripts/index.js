@@ -5,5 +5,5 @@ const menuButton = document.querySelector(".navigation__menu");
 const menuLinks = document.querySelector(".navigation__links");
 
 menuButton.addEventListener("click", e => {
-  menuLinks.classList.toggle("active");
+  menuLinks.classList.toggle("hide");
 });
