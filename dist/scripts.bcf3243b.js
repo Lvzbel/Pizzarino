@@ -203,6 +203,8 @@ require("../node_modules/@fortawesome/fontawesome-free/css/all.css");
 
 var menuButton = document.querySelector(".navigation__menu");
 var menuLinks = document.querySelector(".navigation__links");
+var heroButton = document.querySelector("#hero-button");
+var featuredMenu = document.querySelector("#featured");
 menuButton.addEventListener("click", function (e) {
   var expanded = menuButton.getAttribute("aria-expanded");
   menuLinks.classList.toggle("hide"); // Will set accessible value expandable
@@ -213,6 +215,15 @@ menuButton.addEventListener("click", function (e) {
   } else if (expanded === "true") {
     menuButton.setAttribute("aria-expanded", "false");
   }
+}); // Hero button Event
+
+heroButton.addEventListener("click", function (e) {
+  // Removes focus from the hero button
+  heroButton.blur(); // Scrolls to the menu
+
+  featuredMenu.scrollIntoView(); // Sets focus to the menu section
+
+  featuredMenu.focus();
 });
 },{"../sass/main.scss":"sass/main.scss","../node_modules/@fortawesome/fontawesome-free/css/all.css":"node_modules/@fortawesome/fontawesome-free/css/all.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

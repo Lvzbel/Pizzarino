@@ -3,6 +3,8 @@ import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 
 const menuButton = document.querySelector(".navigation__menu");
 const menuLinks = document.querySelector(".navigation__links");
+const heroButton = document.querySelector("#hero-button");
+const featuredMenu = document.querySelector("#featured");
 
 menuButton.addEventListener("click", e => {
   const expanded = menuButton.getAttribute("aria-expanded");
@@ -16,4 +18,15 @@ menuButton.addEventListener("click", e => {
   } else if (expanded === "true") {
     menuButton.setAttribute("aria-expanded", "false");
   }
+});
+
+// Hero button Event
+
+heroButton.addEventListener("click", e => {
+  // Removes focus from the hero button
+  heroButton.blur();
+  // Scrolls to the menu
+  featuredMenu.scrollIntoView();
+  // Sets focus to the menu section
+  featuredMenu.focus();
 });
