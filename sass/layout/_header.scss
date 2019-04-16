@@ -12,8 +12,25 @@
       rgba(#000, 0.7),
       rgba(#000, 0.7)
     ),
-    url(/img/flame-oven.jpg);
-  // background-image: url(/img/flame-oven.jpg);
+    url(/img/responsive_img/hero-medium.jpg);
+
+  @media only screen and (max-width: $bp-largest) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#000, 0.7),
+        rgba(#000, 0.7)
+      ),
+      url(/img/responsive_img/hero-small.jpg);
+  }
+
+  @media only screen and (min-width: $bp-2k) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#000, 0.7),
+        rgba(#000, 0.7)
+      ),
+      url(/img/responsive_img/hero-large.jpg);
+  }
   background-size: cover;
   background-position: center;
 }
