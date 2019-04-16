@@ -6,6 +6,7 @@ This single page website was created for a fictitious pizza parlor called Pizzar
 
 - Responsive from 4k displays to mobile devices.
 - Responsive images that work with high resolution displays.
+- CSS Flex and CSS Grid.
 - Semantic HTML5.
 - Accessible is achived by fallowing **ARIA** standards.
 - No front-end library used, Everything was written from scratch.
