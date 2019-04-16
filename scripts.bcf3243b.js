@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/home/lvzbel/GitHub/pizzarino/img/flame-oven.jpg":[["flame-oven.543f78d9.jpg","img/flame-oven.jpg"],"img/flame-oven.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/@fortawesome/fontawesome-free/css/all.css":[function(require,module,exports) {
+},{"/home/lvzbel/GitHub/pizzarino/img/responsive_img/hero-medium.jpg":[["hero-medium.5f2171d8.jpg","img/responsive_img/hero-medium.jpg"],"img/responsive_img/hero-medium.jpg"],"/home/lvzbel/GitHub/pizzarino/img/responsive_img/hero-small.jpg":[["hero-small.b1c225b7.jpg","img/responsive_img/hero-small.jpg"],"img/responsive_img/hero-small.jpg"],"/home/lvzbel/GitHub/pizzarino/img/responsive_img/hero-large.jpg":[["hero-large.e30c6199.jpg","img/responsive_img/hero-large.jpg"],"img/responsive_img/hero-large.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/@fortawesome/fontawesome-free/css/all.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);

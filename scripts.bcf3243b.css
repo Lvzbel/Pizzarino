@@ -369,9 +369,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/flame-oven.543f78d9.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/hero-medium.5f2171d8.jpg);
   background-size: cover;
   background-position: center;
+}
+@media only screen and (max-width: 75em) {
+  .header {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/hero-small.b1c225b7.jpg);
+  }
+}
+@media only screen and (min-width: 156.25em) {
+  .header {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/hero-large.e30c6199.jpg);
+  }
 }
 
 .family {
