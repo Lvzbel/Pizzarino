@@ -1,5 +1,6 @@
 .container {
   display: grid;
+  overflow: hidden;
 
   grid-template-rows:
     [navbar-start header-start] min-content [navbar-end] 91vh [header-end main-start] repeat(

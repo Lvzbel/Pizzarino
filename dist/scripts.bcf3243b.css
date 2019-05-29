@@ -88,7 +88,7 @@ body {
 }
 @media only screen and (max-width: 31.25em) {
   .heading-primary--main {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 .heading-primary--sub {
@@ -98,7 +98,7 @@ body {
 }
 @media only screen and (max-width: 31.25em) {
   .heading-primary--sub {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -114,7 +114,8 @@ body {
 }
 @media only screen and (max-width: 31.25em) {
   .third-header {
-    font-size: 2.7rem;
+    font-size: 2.3rem;
+    line-height: 1.2;
   }
 }
 
@@ -126,6 +127,11 @@ body {
 @media only screen and (max-width: 75em) {
   .second-header {
     margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .second-header {
+    font-size: 3.5rem;
   }
 }
 
@@ -236,6 +242,7 @@ body {
 
 .container {
   display: grid;
+  overflow: hidden;
   grid-template-rows: [navbar-start header-start] min-content [navbar-end] 91vh [header-end main-start] repeat(3, [row-start] min-content [row-end]) [footer-start] min-content [footer-end];
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 17rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
