@@ -1,5 +1,6 @@
 import "../sass/main.scss";
 import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+import "../vendors/vendors";
 
 const menuButton = document.querySelector(".navigation__menu");
 const menuLinks = document.querySelector(".navigation__links");
