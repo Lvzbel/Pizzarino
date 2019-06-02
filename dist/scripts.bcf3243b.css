@@ -658,6 +658,11 @@ body {
   transition: all 0.3s;
   z-index: 10;
 }
+@media only screen and (max-width: 31.25em) {
+  .featured__image {
+    transform: scale(1.25);
+  }
+}
 .featured__image:hover {
   transform: scale(1.05);
 }
