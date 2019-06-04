@@ -36,5 +36,5 @@ I just want to clarify that I dont considered myself a designer. The point of th
 
 #### Bugs/To be Fix
 
-- Every day specials section needs work with images once in mobile view.
-- Bug on the Menu section images, display a yellow background when in mobile view.
+- ~~Every day specials section needs work with images once in mobile view.~~
+- ~~Bug on the Menu section images, display a yellow background when in mobile view.~~
